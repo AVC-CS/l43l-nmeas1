@@ -1,9 +1,16 @@
 def main():
     total = 0
+    count = 0
+    mylist = [0] *5
+    while count < 5:
+        numbers = int(input('Enter a number: '))
+        mylist.append(numbers)
+        total += numbers
+        count += 1
 
-    numbers = [0] * 5
-    for i in range(len(numbers)):
-        numbers[i] = int(input('Enter a value: '))
+    #numbers = [0] * 5
+    #for i in range(len(numbers)):
+    #    numbers[i] = int(input('Enter a value: '))
 
     """
     ########################################
@@ -11,7 +18,7 @@ def main():
     ########################################
     """
 
-    # total = sum(numbers)
+    #total = sum(numbers)
     print(total)
 
     ########################################
