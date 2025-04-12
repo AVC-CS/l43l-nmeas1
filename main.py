@@ -1,11 +1,10 @@
 def main():
     total = 0
-    numbers = []
+    numbers = [0]*5
 
-    for x in range(5):
-        numlist = int(input('Enter a number: '))
-        numbers.append(numlist)
-        total += numlist
+    for i in range(len(numbers)):
+        numbers[i] = int(input('Enter a number: '))
+        total += numbers[i]
     print(total)
 
     """
